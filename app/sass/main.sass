@@ -1,204 +1,349 @@
-//general
-html, body
- height: 100%
- margin: 0
- padding: 0
- 
-footer
- border-top: 1px solid #FF4100
-//-----------------------------------------------------------------------------
-//text
-//set fonts
-//IE
-@font-face
- font-family: HellixBold;
- src: url(../fonts/Hellix-Bold.eot);
- 
-//остальные браузеры
-@font-face
- font-family: Hellix Bold;
- src: url(../fonts/Hellix-Bold.otf);
- 
-//IE
-@font-face
- font-family: HellixLight;
- src: url(../fonts/Hellix-Light.eot);
- 
-//остальные браузеры
-@font-face
- font-family: Hellix Light;
- src: url(../fonts/Hellix-Light.otf);
- 
-//IE
-@font-face
- font-family: HellixMedium;
- src: url(../fonts/Hellix-Medium.eot);
- 
-//остальные браузеры
-@font-face
- font-family: Hellix Medium;
- src: url(../fonts/Hellix-Medium.otf);
- 
-//IE
-@font-face
- font-family: HellixRegular;
- src: url(../fonts/Hellix-Regular.eot);
- 
-//остальные браузеры
-@font-face
- font-family: Hellix Regular;
- src: url(../fonts/Hellix-Regular.otf);
- 
-html, body
- text-align: left
- font-family: HellixRegular, Hellix Regular
+//variables
+//screen sizes
+$very_small_screen: 250px
+$small_screen: 480px
+$middle_screen: 700px
+$big_screen: 1000px
+//color
+$orange_color: #FF4100
+$light_grey: #F1E3E5
+$dark_grey: #272431
 
-a
- text-decoration: none
- color: orange
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//settings for all screens
+@media only screen
+ //general
+ html, body
+  height: 100%
+  margin: 0
+  padding: 0
+ 
+ footer
+  border-top: 1px solid $orange_color
+  
+ //----------------------------------------------------------------------------
+ //text
+ //set fonts
+ //IE
+ @font-face
+  font-family: HellixBold
+  src: url(../fonts/Hellix-Bold.eot)
+ 
+ //остальные браузеры
+ @font-face
+  font-family: Hellix Bold
+  src: url(../fonts/Hellix-Bold.otf)
+ 
+ //IE
+ @font-face
+  font-family: HellixLight
+  src: url(../fonts/Hellix-Light.eot)
+ 
+ //остальные браузеры
+ @font-face
+  font-family: Hellix Light
+  src: url(../fonts/Hellix-Light.otf)
+ 
+ //IE
+ @font-face
+  font-family: HellixMedium
+  src: url(../fonts/Hellix-Medium.eot)
+ 
+ //остальные браузеры
+ @font-face
+  font-family: Hellix Medium
+  src: url(../fonts/Hellix-Medium.otf)
+ 
+ //IE
+ @font-face
+  font-family: HellixRegular
+  src: url(../fonts/Hellix-Regular.eot)
+ 
+ //остальные браузеры
+ @font-face
+  font-family: Hellix Regular
+  src: url(../fonts/Hellix-Regular.otf)
+ 
+ html, body
+  text-align: left
+  font-family: HellixRegular, Hellix Regular
+  
+ a
+  text-decoration: none
+  color: $orange_color
 
-header a
- color: white
+ header a
+  color: white
  
-footer a
- color: black
+ footer a
+  color: black
+  
+ .headr, .entroll, .quantity
+  color: white
+  
+ p.author
+  font-weight: bold
+ 
+ .orange
+  color: $orange_color
+ 
+ .grey
+  font-family: HellixLight, Hellix Light
+ 
+ .partners, .who
+  text-align: center
+ 
+ .clear_button, .orange_button
+  font-family: HellixRegular, Hellix Regular
+  color: white
+ 
+ .button_orange
+  font-family: HellixRegular, Hellix Regular
+  color: $orange_color
+  
+ //----------------------------------------------------------------------------
+ //background
+ .headr
+  background-image: url(../img/2_1.jpg)
+  background-size: 100% 100%
+ 
+ .whatdo, blockquote, .meetings, .signup, footer
+  background-color: $light_grey
+ 
+ .reviews, .yourway, .partners
+  background-color: white
+ 
+ .quantity, .entroll
+  background-color: $dark_grey
+ 
+ .entroll, blockquote.review
+  -moz-border-radius: 38px // Firefox <=4
+  -webkit-border-radius: 38px // Chrome < 4, Safari < 5, iOS
+  border-radius: 38px
 
-.texth1
- font-size: 42px
+ .clear_button
+  border: 1px solid white
+  background: rgba(0, 0, 0, 0)
  
-h2, .texth2
- font-size: 26px
+ .orange_button
+  border: 1px solid $orange_color
+  background: $orange_color
+ 
+ .button_orange
+  border: 1px solid $orange_color
+  background: rgba(0, 0, 0, 0)
+  
+ //----------------------------------------------------------------------------
+ //positioning
+ .logo
+  float: left
+ 
+ .login_signup
+  float: right
+  
+ .rpaexpress
+  clear: both
+  
+ blockquote
+  margin: 0
+  
+ .quotes, .quote
+  dislay: inline-block
+  
+ .quotes
+  float: left
+  
+ .quote
+  float: right
+  width: 96%
+  
+ .blackwhite
+  vertical-align: middle
+  
+ article.whatdo, div.whatdo, header.who, blockquote.review, p.quantity, article.yourway
+  display: inline-block
+  vertical-align: top
+  
+ //----------------------------------------------------------------------------
+ //work with images
+ .partners img
+  filter: grayscale(100%) brightness(120%)
+  
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//mobile phone in vertical orientation or with small horizontal
+//@media only screen and (min-width: $very_small_screen)
 
-.headr, .entroll, .quantity
- color: white
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//mobile phone in gorizontal orientation and tablet in vertical orientation
+//@media only screen and (min-width: $small_screen)
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//table on gorizontal orientation, laptop and computer monitor
+@media only screen and (min-width: $middle_screen)
+ //background
+ .clear_button, .orange_button, .button_orange
+  padding: 0 30px
+ //----------------------------------------------------------------------------
+ //positioning
+ //general
+ .headr, section.whatdo, section.reviews, section.quantity,
+ section.yourway, section.meetings, section.partners,
+ section.signup
+  padding: 3% 10%
+  
+ //header
+ a.login
+  padding: 0 30px 0 0
  
-p.author
- font-size: 18px
- font-weight: bold
+ .rpaexpress
+  width: 50%
+  padding: 100px 0
+  
+ //whatdo
+ article.whatdo
+  padding: 30px 0
+  
+ article.whatdo, div.whatdo
+  width: 30%
+  //padding: 30px 0
  
-.orange
- color: #FF4100
+ .entroll
+  padding: 30px
+  
+ //reviews
+ .reviews article
+  padding: 1%
+  
+ header.who
+  width: 30%
+
+ blockquote.review
+  width: 60%
+  
+ //numeric data
+ p.quantity
+  width: 24%
+  
+ //meetings
+ .meeting
+  width: 49%
+  //border: 1px solid red
+  float: left
+  
+ .pic
+  //border: 1px solid red
+  
+ //partners  
+ .partners img
+  margin: 20px
+  
+ //footer
+ footer
+  padding: 0.5% 10%
+  
+ //----------------------------------------------------------------------------
+ //work with images
+ img.dohow
+  max-width: 50px
+  max-height: auto
  
-.grey
- font-family: HellixLight, Hellix Light
+ .who img
+  max-width: 200px
+  max-height: auto
  
-.partners, .who
- text-align: center
+ .partners img
+  max-width: 100px
+  max-height: auto 
+  
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//tablet in gorizontal orientation
+@media only screen and (min-width: $middle_screen)
+ //text
+ html, body
+  font-size: 20px
+  
+ .texth1
+  font-size: 2.625rem
  
-.clear_button, .orange_button
- font-family: HellixRegular, Hellix Regular
- color: white
-//----------------------------------------------------------------------------- 
-//background
-.headr
- background-image: url(../img/2_1.jpg)
- background-size: 100% 100%;
+ h2, .texth2
+  font-size: 1.3rem
  
-.whatdo, blockquote, .meeting, .signup, footer
- background-color: #F1E3E5
+ p.author
+  font-size: 1.1rem
+  
+ .clear_button, .orange_button, .button_orange
+  font-size: 1rem
+  
+ //----------------------------------------------------------------------------
+ //background
+ .clear_button, .orange_button, .button_orange
+  -moz-border-radius: 26px // Firefox <=4
+  -webkit-border-radius: 26px // Chrome < 4, Safari < 5, iOS
+  border-radius: 26px
+  height: 60px
+  
+ //----------------------------------------------------------------------------
+ //positioning
+ //reviews
+ blockquote.review
+  padding: 3%
+  
+ //yourway
+ article.yourway
+  width: 49%
  
-.reviews, .yourway, .partners
- background-color: white
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//laptop and computer monitor
+@media only screen and (min-width: $big_screen)
+ //text
+ html, body
+  font-size: 16px
+  
+ .texth1
+  font-size: 2.625rem
  
-.quantity, .entroll
- background-color: #272431
+ h2, .texth2
+  font-size: 1.625rem
  
-.entroll, blockquote.review
- -moz-border-radius: 38px; /* Firefox <=4 */
- -webkit-border-radius: 38px; /* Chrome < 4, Safari < 5, iOS */
- border-radius: 38px;
+ p.author
+  font-size: 1.125rem
  
-.clear_button
- border: 1px solid white
- background: rgba(0, 0, 0, 0);
- -moz-border-radius: 18px; /* Firefox <=4 */
- -webkit-border-radius: 18px; /* Chrome < 4, Safari < 5, iOS */
- border-radius: 18px;
- height: 40px
- padding: 0 30px
- 
-.orange_button
- border: 1px solid #FF4100
- background: #FF4100
- -moz-border-radius: 18px; /* Firefox <=4 */
- -webkit-border-radius: 18px; /* Chrome < 4, Safari < 5, iOS */
- border-radius: 18px;
- height: 40px
- padding: 0 30px
-//-----------------------------------------------------------------------------
+ .clear_button, .orange_button, .button_orange
+  font-size: 1rem
+  
+ //----------------------------------------------------------------------------
+ //background
+ .clear_button, .orange_button, .button_orange
+  -moz-border-radius: 18px // Firefox <=4
+  -webkit-border-radius: 18px // Chrome < 4, Safari < 5, iOS
+  border-radius: 18px
+  height: 40px
+  
+ //----------------------------------------------------------------------------
+ //positioning
+ //reviews
+ blockquote.review
+  padding: 2%
+
+ //yourway
+ article.yourway
+  width: 33%
+  
+ //sign up
+ .check
+  float: left
+  //border: 1px solid red
+
+ .signmeup
+  float: right
+  //border: 1px solid red
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//settings which need to be scaled
 //positioning
-
-//general
-
-.headr, section.whatdo, section.reviews, section.quantity,
-section.yourway, section.meeting, section.partners,
-section.signup
- padding: 3% 10%
  
-blockquote
- margin: 0
-
-//header
-.login_signup
- float: right
-
-//whatdo
-article.whatdo, div.whatdo
- display: inline-block;
- width: 30%
- 
-.entroll
- padding: 30px
-
-//reviews
-.reviews article
- padding: 2%
-
-header.who
- display: inline-block
- width: 30%
-
-blockquote.review
- padding: 2%
- display: inline-block
- width: 60%
-
-//numeric data
-p.quantity
- display: inline-block;
- width: 24%
- 
-//yourway
-article.yourway
- display: inline-block;
- width: 33%
-
-//meeting
-/*.meeting
+//meetings
+/*.meetings
  height: 500px*/
-.pic
- display: block
-
-//partners
-.partners img
- margin: 20px
-
-//signup
-
-//footer
-footer
- padding: 0.5% 10%
-//----------------------------------------------------------------------------- 
-//work with images
-img.dohow
- max-width: 50px
- max-height: auto
- 
-.who img
- max-width: 200px
- max-height: auto
- 
-.partners img
- max-width: 100px
- max-height: auto
- filter: grayscale(100%) brightness(120%)
+/*.pic
+ display: block*/

@@ -1,183 +1,195 @@
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0; }
+@media only screen {
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0; }
+  footer {
+    border-top: 1px solid #FF4100; }
+  @font-face {
+    font-family: HellixBold;
+    src: url(../fonts/Hellix-Bold.eot); }
+  @font-face {
+    font-family: Hellix Bold;
+    src: url(../fonts/Hellix-Bold.otf); }
+  @font-face {
+    font-family: HellixLight;
+    src: url(../fonts/Hellix-Light.eot); }
+  @font-face {
+    font-family: Hellix Light;
+    src: url(../fonts/Hellix-Light.otf); }
+  @font-face {
+    font-family: HellixMedium;
+    src: url(../fonts/Hellix-Medium.eot); }
+  @font-face {
+    font-family: Hellix Medium;
+    src: url(../fonts/Hellix-Medium.otf); }
+  @font-face {
+    font-family: HellixRegular;
+    src: url(../fonts/Hellix-Regular.eot); }
+  @font-face {
+    font-family: Hellix Regular;
+    src: url(../fonts/Hellix-Regular.otf); }
+  html, body {
+    text-align: left;
+    font-family: HellixRegular, Hellix Regular; }
+  a {
+    text-decoration: none;
+    color: #FF4100; }
+  header a {
+    color: white; }
+  footer a {
+    color: black; }
+  .headr, .entroll, .quantity {
+    color: white; }
+  p.author {
+    font-weight: bold; }
+  .orange {
+    color: #FF4100; }
+  .grey {
+    font-family: HellixLight, Hellix Light; }
+  .partners, .who {
+    text-align: center; }
+  .clear_button, .orange_button {
+    font-family: HellixRegular, Hellix Regular;
+    color: white; }
+  .button_orange {
+    font-family: HellixRegular, Hellix Regular;
+    color: #FF4100; }
+  .headr {
+    background-image: url(../img/2_1.jpg);
+    background-size: 100% 100%; }
+  .whatdo, blockquote, .meetings, .signup, footer {
+    background-color: #F1E3E5; }
+  .reviews, .yourway, .partners {
+    background-color: white; }
+  .quantity, .entroll {
+    background-color: #272431; }
+  .entroll, blockquote.review {
+    -moz-border-radius: 38px;
+    -webkit-border-radius: 38px;
+    border-radius: 38px; }
+  .clear_button {
+    border: 1px solid white;
+    background: rgba(0, 0, 0, 0); }
+  .orange_button {
+    border: 1px solid #FF4100;
+    background: #FF4100; }
+  .button_orange {
+    border: 1px solid #FF4100;
+    background: rgba(0, 0, 0, 0); }
+  .logo {
+    float: left; }
+  .login_signup {
+    float: right; }
+  .rpaexpress {
+    clear: both; }
+  blockquote {
+    margin: 0; }
+  .quotes, .quote {
+    dislay: inline-block; }
+  .quotes {
+    float: left; }
+  .quote {
+    float: right;
+    width: 96%; }
+  .blackwhite {
+    vertical-align: middle; }
+  article.whatdo, div.whatdo, header.who, blockquote.review, p.quantity, article.yourway {
+    display: inline-block;
+    vertical-align: top; }
+  .partners img {
+    filter: grayscale(100%) brightness(120%); } }
 
-footer {
-  border-top: 1px solid #FF4100; }
+@media only screen and (min-width: 700px) {
+  .clear_button, .orange_button, .button_orange {
+    padding: 0 30px; }
+  .headr, section.whatdo, section.reviews, section.quantity,
+  section.yourway, section.meetings, section.partners,
+  section.signup {
+    padding: 3% 10%; }
+  a.login {
+    padding: 0 30px 0 0; }
+  .rpaexpress {
+    width: 50%;
+    padding: 100px 0; }
+  article.whatdo {
+    padding: 30px 0; }
+  article.whatdo, div.whatdo {
+    width: 30%; }
+  .entroll {
+    padding: 30px; }
+  .reviews article {
+    padding: 1%; }
+  header.who {
+    width: 30%; }
+  blockquote.review {
+    width: 60%; }
+  p.quantity {
+    width: 24%; }
+  .meeting {
+    width: 49%;
+    float: left; }
+  .partners img {
+    margin: 20px; }
+  footer {
+    padding: 0.5% 10%; }
+  img.dohow {
+    max-width: 50px;
+    max-height: auto; }
+  .who img {
+    max-width: 200px;
+    max-height: auto; }
+  .partners img {
+    max-width: 100px;
+    max-height: auto; } }
 
-@font-face {
-  font-family: HellixBold;
-  src: url(../fonts/Hellix-Bold.eot); }
+@media only screen and (min-width: 700px) {
+  html, body {
+    font-size: 20px; }
+  .texth1 {
+    font-size: 2.625rem; }
+  h2, .texth2 {
+    font-size: 1.3rem; }
+  p.author {
+    font-size: 1.1rem; }
+  .clear_button, .orange_button, .button_orange {
+    font-size: 1rem; }
+  .clear_button, .orange_button, .button_orange {
+    -moz-border-radius: 26px;
+    -webkit-border-radius: 26px;
+    border-radius: 26px;
+    height: 60px; }
+  blockquote.review {
+    padding: 3%; }
+  article.yourway {
+    width: 49%; } }
 
-@font-face {
-  font-family: Hellix Bold;
-  src: url(../fonts/Hellix-Bold.otf); }
+@media only screen and (min-width: 1000px) {
+  html, body {
+    font-size: 16px; }
+  .texth1 {
+    font-size: 2.625rem; }
+  h2, .texth2 {
+    font-size: 1.625rem; }
+  p.author {
+    font-size: 1.125rem; }
+  .clear_button, .orange_button, .button_orange {
+    font-size: 1rem; }
+  .clear_button, .orange_button, .button_orange {
+    -moz-border-radius: 18px;
+    -webkit-border-radius: 18px;
+    border-radius: 18px;
+    height: 40px; }
+  blockquote.review {
+    padding: 2%; }
+  article.yourway {
+    width: 33%; }
+  .check {
+    float: left; }
+  .signmeup {
+    float: right; } }
 
-@font-face {
-  font-family: HellixLight;
-  src: url(../fonts/Hellix-Light.eot); }
-
-@font-face {
-  font-family: Hellix Light;
-  src: url(../fonts/Hellix-Light.otf); }
-
-@font-face {
-  font-family: HellixMedium;
-  src: url(../fonts/Hellix-Medium.eot); }
-
-@font-face {
-  font-family: Hellix Medium;
-  src: url(../fonts/Hellix-Medium.otf); }
-
-@font-face {
-  font-family: HellixRegular;
-  src: url(../fonts/Hellix-Regular.eot); }
-
-@font-face {
-  font-family: Hellix Regular;
-  src: url(../fonts/Hellix-Regular.otf); }
-
-html, body {
-  text-align: left;
-  font-family: HellixRegular, Hellix Regular; }
-
-a {
-  text-decoration: none;
-  color: orange; }
-
-header a {
-  color: white; }
-
-footer a {
-  color: black; }
-
-.texth1 {
-  font-size: 42px; }
-
-h2, .texth2 {
-  font-size: 26px; }
-
-.headr, .entroll, .quantity {
-  color: white; }
-
-p.author {
-  font-size: 18px;
-  font-weight: bold; }
-
-.orange {
-  color: #FF4100; }
-
-.grey {
-  font-family: HellixLight, Hellix Light; }
-
-.partners, .who {
-  text-align: center; }
-
-.clear_button, .orange_button {
-  font-family: HellixRegular, Hellix Regular;
-  color: white; }
-
-.headr {
-  background-image: url(../img/2_1.jpg);
-  background-size: 100% 100%; }
-
-.whatdo, blockquote, .meeting, .signup, footer {
-  background-color: #F1E3E5; }
-
-.reviews, .yourway, .partners {
-  background-color: white; }
-
-.quantity, .entroll {
-  background-color: #272431; }
-
-.entroll, blockquote.review {
-  -moz-border-radius: 38px;
-  /* Firefox <=4 */
-  -webkit-border-radius: 38px;
-  /* Chrome < 4, Safari < 5, iOS */
-  border-radius: 38px; }
-
-.clear_button {
-  border: 1px solid white;
-  background: rgba(0, 0, 0, 0);
-  -moz-border-radius: 18px;
-  /* Firefox <=4 */
-  -webkit-border-radius: 18px;
-  /* Chrome < 4, Safari < 5, iOS */
-  border-radius: 18px;
-  height: 40px;
-  padding: 0 30px; }
-
-.orange_button {
-  border: 1px solid #FF4100;
-  background: #FF4100;
-  -moz-border-radius: 18px;
-  /* Firefox <=4 */
-  -webkit-border-radius: 18px;
-  /* Chrome < 4, Safari < 5, iOS */
-  border-radius: 18px;
-  height: 40px;
-  padding: 0 30px; }
-
-.headr, section.whatdo, section.reviews, section.quantity,
-section.yourway, section.meeting, section.partners,
-section.signup {
-  padding: 3% 10%; }
-
-blockquote {
-  margin: 0; }
-
-.login_signup {
-  float: right; }
-
-article.whatdo, div.whatdo {
-  display: inline-block;
-  width: 30%; }
-
-.entroll {
-  padding: 30px; }
-
-.reviews article {
-  padding: 2%; }
-
-header.who {
-  display: inline-block;
-  width: 30%; }
-
-blockquote.review {
-  padding: 2%;
-  display: inline-block;
-  width: 60%; }
-
-p.quantity {
-  display: inline-block;
-  width: 24%; }
-
-article.yourway {
-  display: inline-block;
-  width: 33%; }
-
-/*.meeting
+/*.meetings
  height: 500px*/
-.pic {
-  display: block; }
-
-.partners img {
-  margin: 20px; }
-
-footer {
-  padding: 0.5% 10%; }
-
-img.dohow {
-  max-width: 50px;
-  max-height: auto; }
-
-.who img {
-  max-width: 200px;
-  max-height: auto; }
-
-.partners img {
-  max-width: 100px;
-  max-height: auto;
-  filter: grayscale(100%) brightness(120%); }
+/*.pic
+ display: block*/
