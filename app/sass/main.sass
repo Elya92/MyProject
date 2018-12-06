@@ -164,6 +164,7 @@ $transparency: rgba(0, 0, 0, 0) //transparent background
   -moz-border-radius: $field_rounding // Firefox <=4
   -webkit-border-radius: $field_rounding // Chrome < 4, Safari < 5, iOS
   border-radius: $field_rounding
+  
  //----------------------------------------------------------------------------
  //positioning
  article.whatdo, div.whatdo, header.who, blockquote.review, p.quantity, article.yourway
@@ -171,17 +172,22 @@ $transparency: rgba(0, 0, 0, 0) //transparent background
   vertical-align: top
   
  .quotes, .quote
-  dislay: inline-block 
+  dislay: inline-block
+  
+ .partners img
+  display: inline-block
+  vertical-align: middle
  
  .logo, .quotes
   float: left
+  //margin-top: 10%
  
  .login_signup
   float: right
   
  .quote
   float: right
-  width: 96%
+  width: 95%
   
  .rpaexpress
   clear: both
@@ -189,31 +195,68 @@ $transparency: rgba(0, 0, 0, 0) //transparent background
  blockquote
   margin: 0
  
- .blackwhite
-  vertical-align: middle
- 
  //----------------------------------------------------------------------------
  //work with images
- .partners img
+ .partners img, .grey_network
   filter: grayscale(100%) brightness(120%)
-  
- .grey_network
-  filter: grayscale(100%) brightness(120%)
-  
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//mobile phone in vertical orientation or with small horizontal
-//@media only screen and (min-width: $very_small_screen)
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//mobile phone in gorizontal orientation and tablet in vertical orientation
-//@media only screen and (min-width: $small_screen)
-
+//laptop and computer monitor
+@media only screen and (min-width: $big_screen)
+ //text
+ html, body
+  font-size: 16px
+    
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//tablet in gorizontal orientation
+@media only screen and (min-width: $middle_screen) and (max-width: $big_screen - 1px)
+ //text
+ html, body
+  font-size: 18px
+  
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //table on gorizontal orientation, laptop and computer monitor
 @media only screen and (min-width: $middle_screen)
+ //text
+ .texth1
+  font-size: 2.625rem
+  
+ h2, .texth2
+  font-size: 1.625rem
+ 
+ p.author
+  font-size: 1.125rem
+ 
+ .clear_button, .orange_button, .button_orange
+  font-size: 1rem
+  
+  //placeholder
+ ::-webkit-input-placeholder
+  font-size: 1rem
+  
+ :-moz-placeholder //Firefox 4-19
+  font-size: 1rem
+  
+ ::-moz-placeholder //Firefox <51
+  font-size: 1rem
+  
+ :-ms-input-placeholder //IE
+  font-size: 1rem
+  
+ ::-ms-input-placeholder //Microsoft Edge
+  font-size: 1rem
+  
+ //----------------------------------------------------------------------------
  //background
  .clear_button, .orange_button, .button_orange
-  padding: 0 30px
+  padding: 0px 30px
+ //background
+ .clear_button, .orange_button, .button_orange
+  -moz-border-radius: 18px // Firefox <=4
+  -webkit-border-radius: 18px // Chrome < 4, Safari < 5, iOS
+  border-radius: 18px
+  height: 40px
+  
  //----------------------------------------------------------------------------
  //positioning
  //general
@@ -221,46 +264,48 @@ $transparency: rgba(0, 0, 0, 0) //transparent background
  section.yourway, section.partners
   padding: 3% 10%
   
- section.meetings
-  padding: 0 10%
-  overflow: hidden
-  
- section.signup
-  padding: 3% 10% 10%
-  
  //header
  a.login
-  padding: 0 30px 0 0
+  padding-right: 30px
  
  .rpaexpress
   width: 50%
-  padding: 100px 0
+  padding: 7% 0
   
  //whatdo
  article.whatdo, div.whatdo
-  width: 30%
+  width: 29%
   padding: 30px 10px
   margin: 0
   
  //reviews
+ blockquote.review
+  width: 60%
+  margin-top: 30px
+  padding: 2%
+
  .reviews article
   padding: 1%
   
  header.who
-  width: 30%
+  width: 35%
 
- blockquote.review
-  width: 60%
-  margin: 70px 0 0 0
-  
  //numeric data
  p.quantity
   width: 24%
   
+ //yourway
+ article.yourway
+  width: 32%
+  
  //meetings
+ section.meetings
+  padding: 0 10%
+  overflow: hidden
+  
  .meeting
   width: 35%
-  padding: 15% 0 15% 5%
+  margin: 15% 0 15% 5%
   float: left
   
  .pic
@@ -269,8 +314,13 @@ $transparency: rgba(0, 0, 0, 0) //transparent background
  //partners  
  .partners img
   margin: 20px
+  width: 15%
   
  //sign up form
+ section.signup
+  padding: 3% 10% 5%
+  overflow: hidden
+  
  .pct
   height: 30px
   margin: 7px 0
@@ -289,20 +339,19 @@ $transparency: rgba(0, 0, 0, 0) //transparent background
  
  .checkboxs
   float: left
-  margin: 10px 0
+  margin: 2% 0
 
  .signmeup
   float: right
-  margin: 20px 0 0
+  margin: 2% 0 0
   
  //footer
  footer
-  padding: 0.5% 10%
+  padding: 0.5% 3% 0.5% 10%
   overflow: hidden
   
  .footr, .links
   display: inline-block
-  //border: 1px solid red
 
  .footr
   float: left
@@ -311,97 +360,32 @@ $transparency: rgba(0, 0, 0, 0) //transparent background
  .links
   float: right
   width: 15%
-  margin: 1%
+  padding-top: 1%
   
  .grey_network
-  padding-left: 15%
+  padding-left: 5%
+  
  //----------------------------------------------------------------------------
  //work with images
  img.dohow
   max-width: 50px
   max-height: auto
- 
+  
+ //work with images
  .who img
-  max-width: 200px
-  max-height: auto
+  max-width: 50%
  
  .partners img
-  max-width: 100px
+  max-width: 100%
   max-height: auto 
   
  .grey_network
   max-width: 20px
-  max-height: auto 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//tablet in gorizontal orientation
-@media only screen and (min-width: $middle_screen)
- //text
- html, body
-  font-size: 20px
+  max-height: auto
   
- .texth1
-  font-size: 2.625rem
- 
- h2, .texth2
-  font-size: 1.3rem
- 
- p.author
-  font-size: 1.1rem
-  
- .clear_button, .orange_button, .button_orange
-  font-size: 1rem
-  
- //----------------------------------------------------------------------------
- //background
- .clear_button, .orange_button, .button_orange
-  -moz-border-radius: 26px // Firefox <=4
-  -webkit-border-radius: 26px // Chrome < 4, Safari < 5, iOS
-  border-radius: 26px
-  height: 60px
-  
- //----------------------------------------------------------------------------
- //positioning
- //reviews
- blockquote.review
-  padding: 3%
-  
- //yourway
- article.yourway
-  width: 49%
- 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//laptop and computer monitor
-@media only screen and (min-width: $big_screen)
- //text
- html, body
-  font-size: 16px
-  
- .texth1
-  font-size: 2.625rem
- 
- h2, .texth2
-  font-size: 1.625rem
- 
- p.author
-  font-size: 1.125rem
- 
- .clear_button, .orange_button, .button_orange
-  font-size: 1rem
-  
- //----------------------------------------------------------------------------
- //background
- .clear_button, .orange_button, .button_orange
-  -moz-border-radius: 18px // Firefox <=4
-  -webkit-border-radius: 18px // Chrome < 4, Safari < 5, iOS
-  border-radius: 18px
-  height: 40px
-  
- //----------------------------------------------------------------------------
- //positioning
- //reviews
- blockquote.review
-  padding: 2%
+ .pic
+  max-width: 50%
 
- //yourway
- article.yourway
-  width: 33%
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//mobile phone in gorizontal orientation and laptop in vertical orientation
+//@media only screen and (min-width: $small_screen) and (max-width: $middle_screen - 1px)

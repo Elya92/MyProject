@@ -100,61 +100,94 @@
     vertical-align: top; }
   .quotes, .quote {
     dislay: inline-block; }
+  .partners img {
+    display: inline-block;
+    vertical-align: middle; }
   .logo, .quotes {
     float: left; }
   .login_signup {
     float: right; }
   .quote {
     float: right;
-    width: 96%; }
+    width: 95%; }
   .rpaexpress {
     clear: both; }
   blockquote {
     margin: 0; }
-  .blackwhite {
-    vertical-align: middle; }
-  .partners img {
-    filter: grayscale(100%) brightness(120%); }
-  .grey_network {
+  .partners img, .grey_network {
     filter: grayscale(100%) brightness(120%); } }
 
+@media only screen and (min-width: 1000px) {
+  html, body {
+    font-size: 16px; } }
+
+@media only screen and (min-width: 700px) and (max-width: 999px) {
+  html, body {
+    font-size: 18px; } }
+
 @media only screen and (min-width: 700px) {
+  .texth1 {
+    font-size: 2.625rem; }
+  h2, .texth2 {
+    font-size: 1.625rem; }
+  p.author {
+    font-size: 1.125rem; }
   .clear_button, .orange_button, .button_orange {
-    padding: 0 30px; }
+    font-size: 1rem; }
+  ::-webkit-input-placeholder {
+    font-size: 1rem; }
+  -moz-placeholder-font-size: 1rem;
+  ::-moz-placeholder {
+    font-size: 1rem; }
+  -ms-input-placeholder-font-size: 1rem;
+  ::-ms-input-placeholder {
+    font-size: 1rem; }
+  .clear_button, .orange_button, .button_orange {
+    padding: 0px 30px; }
+  .clear_button, .orange_button, .button_orange {
+    -moz-border-radius: 18px;
+    -webkit-border-radius: 18px;
+    border-radius: 18px;
+    height: 40px; }
   .headr, section.whatdo, section.reviews, section.quantity,
   section.yourway, section.partners {
     padding: 3% 10%; }
-  section.meetings {
-    padding: 0 10%;
-    overflow: hidden; }
-  section.signup {
-    padding: 3% 10% 10%; }
   a.login {
-    padding: 0 30px 0 0; }
+    padding-right: 30px; }
   .rpaexpress {
     width: 50%;
-    padding: 100px 0; }
+    padding: 7% 0; }
   article.whatdo, div.whatdo {
-    width: 30%;
+    width: 29%;
     padding: 30px 10px;
     margin: 0; }
+  blockquote.review {
+    width: 60%;
+    margin-top: 30px;
+    padding: 2%; }
   .reviews article {
     padding: 1%; }
   header.who {
-    width: 30%; }
-  blockquote.review {
-    width: 60%;
-    margin: 70px 0 0 0; }
+    width: 35%; }
   p.quantity {
     width: 24%; }
+  article.yourway {
+    width: 32%; }
+  section.meetings {
+    padding: 0 10%;
+    overflow: hidden; }
   .meeting {
     width: 35%;
-    padding: 15% 0 15% 5%;
+    margin: 15% 0 15% 5%;
     float: left; }
   .pic {
     float: right; }
   .partners img {
-    margin: 20px; }
+    margin: 20px;
+    width: 15%; }
+  section.signup {
+    padding: 3% 10% 5%;
+    overflow: hidden; }
   .pct {
     height: 30px;
     margin: 7px 0; }
@@ -168,12 +201,12 @@
     margin-right: 1%; }
   .checkboxs {
     float: left;
-    margin: 10px 0; }
+    margin: 2% 0; }
   .signmeup {
     float: right;
-    margin: 20px 0 0; }
+    margin: 2% 0 0; }
   footer {
-    padding: 0.5% 10%;
+    padding: 0.5% 3% 0.5% 10%;
     overflow: hidden; }
   .footr, .links {
     display: inline-block; }
@@ -183,60 +216,19 @@
   .links {
     float: right;
     width: 15%;
-    margin: 1%; }
+    padding-top: 1%; }
   .grey_network {
-    padding-left: 15%; }
+    padding-left: 5%; }
   img.dohow {
     max-width: 50px;
     max-height: auto; }
   .who img {
-    max-width: 200px;
-    max-height: auto; }
+    max-width: 50%; }
   .partners img {
-    max-width: 100px;
+    max-width: 100%;
     max-height: auto; }
   .grey_network {
     max-width: 20px;
-    max-height: auto; } }
-
-@media only screen and (min-width: 700px) {
-  html, body {
-    font-size: 20px; }
-  .texth1 {
-    font-size: 2.625rem; }
-  h2, .texth2 {
-    font-size: 1.3rem; }
-  p.author {
-    font-size: 1.1rem; }
-  .clear_button, .orange_button, .button_orange {
-    font-size: 1rem; }
-  .clear_button, .orange_button, .button_orange {
-    -moz-border-radius: 26px;
-    -webkit-border-radius: 26px;
-    border-radius: 26px;
-    height: 60px; }
-  blockquote.review {
-    padding: 3%; }
-  article.yourway {
-    width: 49%; } }
-
-@media only screen and (min-width: 1000px) {
-  html, body {
-    font-size: 16px; }
-  .texth1 {
-    font-size: 2.625rem; }
-  h2, .texth2 {
-    font-size: 1.625rem; }
-  p.author {
-    font-size: 1.125rem; }
-  .clear_button, .orange_button, .button_orange {
-    font-size: 1rem; }
-  .clear_button, .orange_button, .button_orange {
-    -moz-border-radius: 18px;
-    -webkit-border-radius: 18px;
-    border-radius: 18px;
-    height: 40px; }
-  blockquote.review {
-    padding: 2%; }
-  article.yourway {
-    width: 33%; } }
+    max-height: auto; }
+  .pic {
+    max-width: 50%; } }
