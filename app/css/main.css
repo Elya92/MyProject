@@ -55,6 +55,19 @@
   .button_orange {
     font-family: HellixRegular, Hellix Regular;
     color: #FF4100; }
+  ::-webkit-input-placeholder {
+    color: black;
+    font-family: HellixRegular, Hellix Regular; }
+  -moz-placeholder-color: black;
+  -moz-placeholder-font-family: HellixRegular, Hellix Regular;
+  ::-moz-placeholder {
+    color: black;
+    font-family: HellixRegular, Hellix Regular; }
+  -ms-input-placeholder-color: black;
+  -ms-input-placeholder-font-family: HellixRegular, Hellix Regular;
+  ::-ms-input-placeholder {
+    color: black;
+    font-family: HellixRegular, Hellix Regular; }
   .headr {
     background-image: url(../img/2_1.jpg);
     background-size: 100% 100%; }
@@ -77,62 +90,102 @@
   .button_orange {
     border: 1px solid #FF4100;
     background: rgba(0, 0, 0, 0); }
-  .logo {
+  input, select {
+    border: 0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; }
+  article.whatdo, div.whatdo, header.who, blockquote.review, p.quantity, article.yourway {
+    display: inline-block;
+    vertical-align: top; }
+  .quotes, .quote {
+    dislay: inline-block; }
+  .logo, .quotes {
     float: left; }
   .login_signup {
     float: right; }
+  .quote {
+    float: right;
+    width: 96%; }
   .rpaexpress {
     clear: both; }
   blockquote {
     margin: 0; }
-  .quotes, .quote {
-    dislay: inline-block; }
-  .quotes {
-    float: left; }
-  .quote {
-    float: right;
-    width: 96%; }
   .blackwhite {
     vertical-align: middle; }
-  article.whatdo, div.whatdo, header.who, blockquote.review, p.quantity, article.yourway {
-    display: inline-block;
-    vertical-align: top; }
   .partners img {
+    filter: grayscale(100%) brightness(120%); }
+  .grey_network {
     filter: grayscale(100%) brightness(120%); } }
 
 @media only screen and (min-width: 700px) {
   .clear_button, .orange_button, .button_orange {
     padding: 0 30px; }
   .headr, section.whatdo, section.reviews, section.quantity,
-  section.yourway, section.meetings, section.partners,
-  section.signup {
+  section.yourway, section.partners {
     padding: 3% 10%; }
+  section.meetings {
+    padding: 0 10%;
+    overflow: hidden; }
+  section.signup {
+    padding: 3% 10% 10%; }
   a.login {
     padding: 0 30px 0 0; }
   .rpaexpress {
     width: 50%;
     padding: 100px 0; }
-  article.whatdo {
-    padding: 30px 0; }
   article.whatdo, div.whatdo {
-    width: 30%; }
-  .entroll {
-    padding: 30px; }
+    width: 30%;
+    padding: 30px 10px;
+    margin: 0; }
   .reviews article {
     padding: 1%; }
   header.who {
     width: 30%; }
   blockquote.review {
-    width: 60%; }
+    width: 60%;
+    margin: 70px 0 0 0; }
   p.quantity {
     width: 24%; }
   .meeting {
-    width: 49%;
+    width: 35%;
+    padding: 15% 0 15% 5%;
     float: left; }
+  .pic {
+    float: right; }
   .partners img {
     margin: 20px; }
+  .pct {
+    height: 30px;
+    margin: 7px 0; }
+  select.pct {
+    height: 36px; }
+  .hundred {
+    width: 100%; }
+  .fifty {
+    width: 48%; }
+  .left {
+    margin-right: 1%; }
+  .checkboxs {
+    float: left;
+    margin: 10px 0; }
+  .signmeup {
+    float: right;
+    margin: 20px 0 0; }
   footer {
-    padding: 0.5% 10%; }
+    padding: 0.5% 10%;
+    overflow: hidden; }
+  .footr, .links {
+    display: inline-block; }
+  .footr {
+    float: left;
+    width: 80%; }
+  .links {
+    float: right;
+    width: 15%;
+    margin: 1%; }
+  .grey_network {
+    padding-left: 15%; }
   img.dohow {
     max-width: 50px;
     max-height: auto; }
@@ -141,6 +194,9 @@
     max-height: auto; }
   .partners img {
     max-width: 100px;
+    max-height: auto; }
+  .grey_network {
+    max-width: 20px;
     max-height: auto; } }
 
 @media only screen and (min-width: 700px) {
@@ -183,13 +239,4 @@
   blockquote.review {
     padding: 2%; }
   article.yourway {
-    width: 33%; }
-  .check {
-    float: left; }
-  .signmeup {
-    float: right; } }
-
-/*.meetings
- height: 500px*/
-/*.pic
- display: block*/
+    width: 33%; } }

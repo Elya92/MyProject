@@ -177,7 +177,7 @@
      <p class='orange texth1'>Yuri Shilyaev</p>
 	 <blockquote class='grey'>
 	  <span class='texth2'>&#8220;</span>WorkFusion is pround to support our customers
-	  through the journey of adoption, integration andoptimization.<span class='texth2'>&#8220;</span>
+	  through the journey of adoption, integration and optimization.<span class='texth2'>&#8220;</span>
 	 </blockquote>
     </article>
    </div>
@@ -209,62 +209,69 @@
  
  <!--sign up-->
  <section class='signup'>
-  <h2>Sign up for free</h2>
-  <form>
-   <input type='text' name='firstname' placeholder='* First name'>
-   <input type='text' name='lastname' placeholder='* Last name'>
-   <br>
-   <input type='email' name='email' placeholder='* Business email'>
-   <br>
-   <select name='joblevel'>
-    <option disabled>* Job level</option>
-    <option value='lev1'>Level 1</option>
-	<option value='lev2'>Level 2</option>
-	<option value='lev3'>Level 3</option>
-   </select>
-   <select name='jobfunction' required>
-    <option disabled>* Job function</option>
-    <option value='fun1'>Function 1</option>
-	<option value='fun2'>Function 2</option>
-	<option value='fun3'>Function 3</option>
-   </select>
-   <br>
-   <input type='text' name='company' placeholder='* Company name'>
-   <select name='industry' required>
-    <option disabled>* Industry</option>
-    <option value='ind1'>Industry 1</option>
-	<option value='ind2'>Industry 2</option>
-	<option value='ind3'>Industry 3</option>
-   </select>
-   <br>
-   <select name='country' required>
-    <option disabled>* Country</option>
-    <option value='coun1'>Country 1</option>
-	<option value='coun2'>Country 2</option>
-	<option value='coun3'>Country 3</option>
-   </select>
-   <br>
-   <div class='check'>
-    <label>
-     <input type='checkbox' name='accept' value='accept'>
-	 <span class='grey'>I accept the <a href='#' class='orange'>Automation Academy Policy</a></span>
-    </label>
-    <br>
-    <label>
-     <input type='checkbox' name='download' value='download'>
-	 <span class='grey'>Download RPA Express and register me to Community Forum</span>
-    </label>
-   </div>
-   <input type='submit' value='Sign me up' class='button_orange signmeup'>
-  </form>
+  <div class='signupform'>
+   <h2>Sign up for free</h2>
+   <form>
+    <input type='text' name='firstname' placeholder='* First name' class='fifty pct left'>
+    <input type='text' name='lastname' placeholder='* Last name' class='fifty pct'>
+    <input type='email' name='email' placeholder='* Business email' class='hundred pct'>
+    <select name='joblevel' class='fifty pct left'>
+     <option selected hidden>* Job level</option>
+     <option value='lev1'>Level 1</option>
+	 <option value='lev2'>Level 2</option>
+	 <option value='lev3'>Level 3</option>
+    </select>
+    <select name='jobfunction' required class='fifty pct'>
+     <option selected hidden>* Job function</option>
+     <option value='fun1'>Function 1</option>
+	 <option value='fun2'>Function 2</option>
+	 <option value='fun3'>Function 3</option>
+    </select>
+    <input type='text' name='company' placeholder='* Company name' class='fifty pct left'>
+    <select name='industry' required class='fifty pct'>
+     <option selected hidden>* Industry</option>
+     <option value='ind1'>Industry 1</option>
+	 <option value='ind2'>Industry 2</option>
+	 <option value='ind3'>Industry 3</option>
+    </select>
+    <select name='country' required class='hundred pct'>
+     <option selected hidden>* Country</option>
+     <option value='coun1'>Country 1</option>
+	 <option value='coun2'>Country 2</option>
+	 <option value='coun3'>Country 3</option>
+    </select>
+    <div class='checkboxs'>
+     <label class='check'>
+      <input type='checkbox' name='accept' value='accept' class='clear_check'>
+	  <span class='grey'>I accept the <a href='#' class='orange'>Automation Academy Policy</a></span>
+     </label>
+	 <br><br>
+     <label class='check'>
+      <input type='checkbox' name='download' value='download' class='clear_check'>
+	  <span class='grey'>Download RPA Express and register me to Community Forum</span>
+     </label>
+    </div>
+    <input type='submit' value='Sign me up' class='button_orange signmeup'>
+   </form>
+  </div>
  </section>
   
  <footer class='grey'>
-  <p>&copy;WorkFusion 2018. All rights reserved. Intelligent Automation for Operations |
+  <p class='footr'>&copy;WorkFusion 2018. All rights reserved. Intelligent Automation for Operations |
    Phone: <a href='+16464537974'>+1 646.453.7974</a> |
    <a href='#'>Privacy Policy</a>
   </p>
-  <!--links on social network-->
+  <div class='links'>
+   <a href='https://twitter.com/'>
+    <img src='img/social_networks/twitter.png' alt='twitter' class='grey_network'>
+   </a>
+   <a href='https://www.facebook.com/'>
+    <img src='img/social_networks/facebook.png' alt='fasebook' class='grey_network'>
+   </a>
+   <a href='https://www.linkedin.com/'>
+    <img src='img/social_networks/linkedin.png' alt='linkedin' class='grey_network'>
+   </a>
+  </div>
  </footer>   
 </body>
 </html>

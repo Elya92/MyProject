@@ -4,10 +4,15 @@ $very_small_screen: 250px
 $small_screen: 480px
 $middle_screen: 700px
 $big_screen: 1000px
+
 //color
 $orange_color: #FF4100
 $light_grey: #F1E3E5
 $dark_grey: #272431
+
+$block-rouning: 38px
+$field_rounding: 5px
+$transparency: rgba(0, 0, 0, 0) //transparent background
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //settings for all screens
@@ -101,6 +106,27 @@ $dark_grey: #272431
   font-family: HellixRegular, Hellix Regular
   color: $orange_color
   
+ //placeholder
+ ::-webkit-input-placeholder
+  color: black
+  font-family: HellixRegular, Hellix Regular
+  
+ :-moz-placeholder //Firefox 4-19
+  color: black
+  font-family: HellixRegular, Hellix Regular
+  
+ ::-moz-placeholder //Firefox <51
+  color: black
+  font-family: HellixRegular, Hellix Regular
+  
+ :-ms-input-placeholder //IE
+  color: black
+  font-family: HellixRegular, Hellix Regular
+  
+ ::-ms-input-placeholder //Microsoft Edge
+  color: black
+  font-family: HellixRegular, Hellix Regular
+  
  //----------------------------------------------------------------------------
  //background
  .headr
@@ -117,13 +143,13 @@ $dark_grey: #272431
   background-color: $dark_grey
  
  .entroll, blockquote.review
-  -moz-border-radius: 38px // Firefox <=4
-  -webkit-border-radius: 38px // Chrome < 4, Safari < 5, iOS
-  border-radius: 38px
+  -moz-border-radius: $block_rouning // Firefox <=4
+  -webkit-border-radius: $block_rouning // Chrome < 4, Safari < 5, iOS
+  border-radius: $block_rouning
 
  .clear_button
   border: 1px solid white
-  background: rgba(0, 0, 0, 0)
+  background: $transparency
  
  .orange_button
   border: 1px solid $orange_color
@@ -131,42 +157,47 @@ $dark_grey: #272431
  
  .button_orange
   border: 1px solid $orange_color
-  background: rgba(0, 0, 0, 0)
+  background: $transparency
   
+ input, select
+  border: 0
+  -moz-border-radius: $field_rounding // Firefox <=4
+  -webkit-border-radius: $field_rounding // Chrome < 4, Safari < 5, iOS
+  border-radius: $field_rounding
  //----------------------------------------------------------------------------
  //positioning
- .logo
+ article.whatdo, div.whatdo, header.who, blockquote.review, p.quantity, article.yourway
+  display: inline-block
+  vertical-align: top
+  
+ .quotes, .quote
+  dislay: inline-block 
+ 
+ .logo, .quotes
   float: left
  
  .login_signup
   float: right
+  
+ .quote
+  float: right
+  width: 96%
   
  .rpaexpress
   clear: both
   
  blockquote
   margin: 0
-  
- .quotes, .quote
-  dislay: inline-block
-  
- .quotes
-  float: left
-  
- .quote
-  float: right
-  width: 96%
-  
+ 
  .blackwhite
   vertical-align: middle
-  
- article.whatdo, div.whatdo, header.who, blockquote.review, p.quantity, article.yourway
-  display: inline-block
-  vertical-align: top
-  
+ 
  //----------------------------------------------------------------------------
  //work with images
  .partners img
+  filter: grayscale(100%) brightness(120%)
+  
+ .grey_network
   filter: grayscale(100%) brightness(120%)
   
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -187,9 +218,15 @@ $dark_grey: #272431
  //positioning
  //general
  .headr, section.whatdo, section.reviews, section.quantity,
- section.yourway, section.meetings, section.partners,
- section.signup
+ section.yourway, section.partners
   padding: 3% 10%
+  
+ section.meetings
+  padding: 0 10%
+  overflow: hidden
+  
+ section.signup
+  padding: 3% 10% 10%
   
  //header
  a.login
@@ -200,15 +237,10 @@ $dark_grey: #272431
   padding: 100px 0
   
  //whatdo
- article.whatdo
-  padding: 30px 0
-  
  article.whatdo, div.whatdo
   width: 30%
-  //padding: 30px 0
- 
- .entroll
-  padding: 30px
+  padding: 30px 10px
+  margin: 0
   
  //reviews
  .reviews article
@@ -219,6 +251,7 @@ $dark_grey: #272431
 
  blockquote.review
   width: 60%
+  margin: 70px 0 0 0
   
  //numeric data
  p.quantity
@@ -226,21 +259,62 @@ $dark_grey: #272431
   
  //meetings
  .meeting
-  width: 49%
-  //border: 1px solid red
+  width: 35%
+  padding: 15% 0 15% 5%
   float: left
   
  .pic
-  //border: 1px solid red
+  float: right
   
  //partners  
  .partners img
   margin: 20px
   
+ //sign up form
+ .pct
+  height: 30px
+  margin: 7px 0
+  
+ select.pct
+  height: 36px
+  
+ .hundred
+  width: 100%
+  
+ .fifty
+  width: 48%
+ 
+ .left
+  margin-right: 1%
+ 
+ .checkboxs
+  float: left
+  margin: 10px 0
+
+ .signmeup
+  float: right
+  margin: 20px 0 0
+  
  //footer
  footer
   padding: 0.5% 10%
+  overflow: hidden
   
+ .footr, .links
+  display: inline-block
+  //border: 1px solid red
+
+ .footr
+  float: left
+  width: 80%
+  
+ .links
+  float: right
+  width: 15%
+  margin: 1%
+  
+ .grey_network
+  padding-left: 15%
  //----------------------------------------------------------------------------
  //work with images
  img.dohow
@@ -255,6 +329,9 @@ $dark_grey: #272431
   max-width: 100px
   max-height: auto 
   
+ .grey_network
+  max-width: 20px
+  max-height: auto 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //tablet in gorizontal orientation
 @media only screen and (min-width: $middle_screen)
@@ -328,22 +405,3 @@ $dark_grey: #272431
  //yourway
  article.yourway
   width: 33%
-  
- //sign up
- .check
-  float: left
-  //border: 1px solid red
-
- .signmeup
-  float: right
-  //border: 1px solid red
-
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//settings which need to be scaled
-//positioning
- 
-//meetings
-/*.meetings
- height: 500px*/
-/*.pic
- display: block*/
