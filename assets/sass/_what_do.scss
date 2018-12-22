@@ -1,0 +1,51 @@
+.what_do{
+ background-color: $light_grey;
+}
+
+p.what_do{
+  font-size: 1.625rem;
+}
+
+.what_do{
+ p{
+  @include light_text;
+ }
+}
+
+article.what_do, div.what_do{
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  padding: 3% 1%;
+  margin: 0;
+}
+ 
+.entroll{
+  color: white;
+  background-color: $dark_grey;
+  padding: 3% 7%;
+}
+ 
+.entroll{
+  -moz-border-radius: $block_rouning; // Firefox <=4
+  -webkit-border-radius: $block_rouning; // Chrome < 4, Safari < 5, iOS
+  border-radius: $block_rouning;
+}
+
+@media only screen and (max-width: $extra_small_screen){
+ .what_do{
+  img{
+   max-width: 30px;
+   max-height: auto;
+  }
+ }
+}
+
+@media only screen and (min-width: $extra_small_screen + 1px){
+ .what_do{
+  img{
+   max-width: 50px;
+   max-height: auto;
+  }
+ }
+}

@@ -1,0 +1,39 @@
+header{
+ color: white;
+ background-image: url(../img/1_1.jpg);
+ background-size: 100% 100%;
+}
+ 
+logo{
+  float: left;
+  max-width: 150px;
+  max-height: auto;
+}
+ 
+.login_signup{
+ float: right;
+}
+
+a.login{
+ padding-right: 30px;
+}
+ 
+.rpa_express{
+ clear: both;
+ padding: 7% 0;
+ width: 70%;
+}
+
+p.rpa_express{
+  font-size: 1.625rem;
+}
+
+.header_sliders{
+ text-align: center;
+}
+
+.header_sliders{
+ input{
+  cursor: pointer;
+ }
+}

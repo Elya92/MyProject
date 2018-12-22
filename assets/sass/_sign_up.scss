@@ -1,0 +1,75 @@
+.sign_up{
+ background-color: $light_grey;
+ overflow: hidden;
+}
+
+select{
+ font-size: 1rem;
+}
+  
+//placeholder
+::-webkit-input-placeholder{
+ color: black;
+ font-family: HellixRegular, Hellix Regular;
+ font-size: 1rem;
+}
+  
+:-moz-placeholder{ //Firefox 4-19
+ color: black;
+ font-family: HellixRegular, Hellix Regular;
+ font-size: 1rem;
+}
+  
+::-moz-placeholder{ //Firefox <51
+ color: black;
+ font-family: HellixRegular, Hellix Regular;
+ font-size: 1rem;
+}
+ 
+:-ms-input-placeholder{ //IE
+ color: black;
+ font-family: HellixRegular, Hellix Regular;
+ font-size: 1rem;
+}
+  
+::-ms-input-placeholder{ //Microsoft Edge
+ color: black;
+ font-family: HellixRegular, Hellix Regular;
+ font-size: 1rem;
+}
+
+input, select{
+ border: 0;
+ -moz-border-radius: $field_rounding; // Firefox <=4
+ -webkit-border-radius: $field_rounding; // Chrome < 4, Safari < 5, iOS
+ border-radius: $field_rounding;
+}
+
+form{
+ padding-bottom: 100px;
+}
+
+.names, .email, .job, .company, .country{
+ display: flex;
+ justify-content: space-between;
+ margin-bottom: 25px;
+}
+
+.first_name, .last_name, .job_level, .job_function, .company_name, .industry{
+ flex-basis: 49%;
+ height: 40px;
+}
+
+.business_email, .your_country{
+ flex-basis: 100%;
+ height: 40px;
+}
+
+.checkboxs{
+ float: left;
+ width: 70%;
+}
+
+.sign_me_up{
+ float: right;
+}

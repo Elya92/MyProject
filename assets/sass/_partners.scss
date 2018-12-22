@@ -1,0 +1,25 @@
+.partners{
+ overflow: hidden;
+ text-align: center;
+}
+
+p.partners{
+  font-size: 1.625rem;
+}
+ 
+.partners{
+ img{
+  display: inline-block;
+  vertical-align: middle;
+  filter: grayscale(100%) brightness(150%);
+  margin: 0 20px;
+  width: 15%;
+  max-width: 100%;
+  max-height: auto;
+ }
+}
+
+.good_company{
+ display: inline-block;
+ width: 60%;
+}

@@ -1,0 +1,13 @@
+.find_path{
+ article{
+  display: inline-block;
+  vertical-align: top;
+  width: 32%;
+ }
+}
+
+.find_path{
+ p{
+  @include light_text;
+ }
+}

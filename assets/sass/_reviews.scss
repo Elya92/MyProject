@@ -1,0 +1,115 @@
+.who, .review_first, .review_second{
+  display: inline-block;
+  vertical-align: top;
+}
+
+p.reviews{
+  font-size: 1.625rem;
+}
+
+.reviews{
+ article{
+  @include light_text;
+ }
+ p{
+  @include light_text;
+ }
+}
+
+//autor
+p.author{
+ font-size: 1.125rem;
+ font-weight: bold;
+}
+
+.who{
+ text-align: center;
+ color: black;
+ background-image: none;
+ background-color: white;
+ width: 35%;
+}
+
+.who{
+ img{
+  max-width: 150px;
+  max-height: auto;
+ }
+}
+
+//review
+.quotes{
+ color: $orange_color;
+ font-size: 2.625rem;
+}
+
+.reviews{
+ article{
+  padding: 1%;
+ }
+}
+
+blockquote{
+ margin: 0;
+}
+
+.review_first, .review_second{
+ -moz-border-radius: $block_rouning; // Firefox <=4
+ -webkit-border-radius: $block_rouning; // Chrome < 4, Safari < 5, iOS
+ border-radius: $block_rouning;
+}
+
+.review_first, .review_second{
+ background-color: $light-grey;
+ width: 60%;
+ margin-top: 2%;
+ padding: 2%;
+ position: relative;
+}
+
+.quotes, .quote{
+ dislay: inline-block;
+}
+ 
+.quotes{
+ float: left;
+} 
+ 
+.quote{
+ float: right;
+ width: 95%;
+}
+
+//triangle
+.review_first::before{
+ content: '';
+ width: 0;
+ height: 0;
+ border-style: solid;
+ border-width: 0 40px 40px 0;
+ border-color: transparent $light-grey transparent transparent;
+ position: absolute;
+ left: -40px;
+ top: 40px;
+}
+
+.review_second::after{
+ content: '';
+ width: 0;
+ height: 0;
+ border-style: solid;
+ border-width: 40px 40px 0 0;
+ border-color: $light-grey transparent transparent transparent;
+ position: absolute;
+ left: 100%;
+ top: 40px;
+}
+
+@media only screen and (max-width: $extra_small_screen){
+ .who{
+  img{
+   max-width: 100px;
+   max-height: auto;
+  }
+ } 
+}

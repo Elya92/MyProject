@@ -1,0 +1,54 @@
+//screen sizes
+$extra_small_screen: 767px;
+$small_screen: 991px;
+$medium_screen: 1199px;
+
+//containers
+$small_container: 750px;
+$medium_container: 970px;
+$large_container: 1170px;
+
+//color
+$orange_color: #FF4100;
+$light_grey: #F1E3E5;
+$dark_grey: #272431;
+
+$transparency: rgba(0, 0, 0, 0); //transparent background
+
+//rounding
+$block-rouning: 38px;
+$button_rounding: 18px;
+$field_rounding: 5px;
+
+//text
+@mixin light_text{
+ font-family: HellixLight, Hellix Light;
+}
+
+//button
+@mixin clear_button{
+ font-family: HellixRegular, Hellix Regular;
+ font-size: 1rem;
+ color: $orange_color;
+ border: 1px solid $orange_color;
+ background: $transparency;
+ padding: 0 30px;
+ cursor: pointer;
+}
+ 
+@mixin orange_button{
+ font-family: HellixRegular, Hellix Regular;
+ font-size: 1rem;
+ color: white;
+ border: 1px solid $orange_color;
+ background: $orange_color;
+ padding: 0 30px;
+ cursor: pointer;
+}
+
+@mixin button_rounding{
+ -moz-border-radius: $button_rounding; // Firefox <=4
+ -webkit-border-radius: $button_rounding; // Chrome < 4, Safari < 5, iOS
+ border-radius: $button_rounding;
+ height: 40px;
+}

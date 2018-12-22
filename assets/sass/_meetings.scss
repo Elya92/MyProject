@@ -1,0 +1,65 @@
+.meetings{
+ background-color: $light_grey;
+ position: relative;
+}
+
+.meeting{
+ p{
+  color: $orange_color;
+  font-size: 2.625rem;
+ }
+}
+ 
+blockquote{
+ margin: 0;
+}
+ 
+.man{
+ max-width: 40%;
+ position: absolute;
+ bottom: 0px;
+ right: 100px;
+}
+
+.meetings_sliders{
+ text-align: center;
+ padding-bottom: 40px;
+}
+
+.meetings_sliders{
+ input{
+  cursor: pointer;
+ }
+}
+
+@media only screen and (max-width: $extra_small_screen){
+ .meeting{
+  width: 50%;
+  margin: 10% 3% 10% 0;
+ }
+ .man{
+  max-width: 35%;
+  right: 50px;
+ }
+}
+
+@media only screen and (min-width: $extra_small_screen + 1px) and (max-width: $small_screen){
+ .meeting{
+  width: 45%;
+  margin: 17% 5% 17% 0;
+ }
+}
+
+@media only screen and (min-width: $small_screen + 1px) and (max-width: $medium_screen){
+ .meeting{
+  width: 45%;
+  margin: 16% 5% 16% 0;
+ }
+}
+
+@media only screen and (min-width: $medium_screen + 1px){
+ .meeting{
+  width: 45%;
+  margin: 13% 5% 13% 0;
+ }
+}

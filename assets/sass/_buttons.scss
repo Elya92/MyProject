@@ -1,0 +1,21 @@
+.sign_up_free{
+ @include clear_button;
+ color: white;
+ border: 1px solid white;
+ @include button_rounding;
+}
+
+.learn_more, .entroll_now_1{
+ @include orange_button;
+ @include button_rounding;
+}
+
+.entroll_now_2, .sign_me_up{
+ @include clear_button;
+ @include button_rounding;
+}
+
+
+
+
+

@@ -1,0 +1,48 @@
+html, body{
+ height: 100%;
+ margin: 0;
+ padding: 0;
+ text-align: left;
+ font-family: HellixRegular, Hellix Regular;
+ //background-color: white;
+}
+ 
+footer{
+ border-top: 1px solid $orange_color;
+}
+
+.container{
+ padding: 3% 0;
+}
+ 
+@media only screen and (max-width: $extra_small_screen){
+ .container{
+  width: auto;
+  padding: 3%;
+ }
+}
+  
+@media only screen and (min-width: $extra_small_screen + 1px) and (max-width: $small_screen){
+ .container{
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+ }
+}
+  
+@media only screen and (min-width: $small_screen + 1px)  and (max-width: $medium_screen){
+ .container{
+  max-width: 970px;
+  margin-left: auto;
+  margin-right: auto;
+ }
+}
+  
+@media only screen and (min-width: $medium_screen + 1px)  and (min-width: $medium_screen + 1px){
+ .container{
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+ }
+}
+  
